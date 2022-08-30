@@ -1,0 +1,412 @@
+/*----------HEADER----------*/
+body {
+	font-family: 'Uchen', serif;  /*Estilo de fonte pega do Google*/
+}
+
+header {
+	background: #F8F8FF; /*Cor da barra de navegação*/
+	padding: 15px 0;
+
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.logo-superior {
+	
+	width: 55px;
+
+}
+
+nav {
+	position: absolute;  /* Define a posição da navegação */
+	top: 25px;           /* Define a distancia do topo */
+	right: 0px;          /* Define a distancia da direita */
+
+
+}
+nav li{
+	text-transform: uppercase; /* Para deixar em destaque*/
+	display: inline;   /* Para tirar a lista de block e deixar em linha*/
+	margin: 0 0 0 25px;    /* Espaçamento do texto na margem*/
+	/*font-weight: bold;  Para fazer o texto em negrito*/
+
+}
+
+nav a{
+	color: #000000;         /* Muda a cor da fonte*/
+	font-size: 20px;        /* Aumenta o tamanho da fonte*/
+	text-decoration: none;  /* Faz com que nao apresente que seja um Link.*/
+}
+
+nav a:hover {
+	text-decoration: underline; /*Fazer com que o texto fica sublinhado*/
+	color: #00FF7F;             /* Muda a cor da fonte*/
+	transition: 0.5s;             /*Fazer um temporizador para a transição*/
+
+}
+
+
+
+/*+++++++++++++++++++++++++++MAIN+++++++++++++++++++++++++++*/
+
+
+/*+++++++++++++++++++++++++++HOME+++++++++++++++++++++++++++*/
+.apresentacao-principal {
+	background: linear-gradient(#F8F8FF, #F5F5F5); /*Cor de fundo em degradê*/
+	padding: 2em 0 10em;
+	border-top: 2px solid #000000;
+
+}
+
+.apresentacao-caixa {	
+	position: relative;
+	width: 40%;
+	margin: 0 50px;
+
+}
+
+.apresentacao-nome {
+	font-size: 16px;
+	padding: 0.5em 0;
+	text-transform: uppercase;
+}
+
+@keyframes pisca {
+ 100%{
+ 	border-right-color: transparent;
+ }
+}
+
+@keyframes escrever{
+	100%{
+		max-width: 100%;
+	}
+}
+
+.apresentacao-titulo {
+	display: inline-block;
+	border-right: 1.5px solid #000000;
+	color: 	#00FF7F;
+	font-size: 48px;
+	animation: pisca normal infinite .8s;
+	font-weight: bold;
+	
+	max-width: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: pisca normal infinite .8s, escrever normal 5s steps(35) both;
+
+}
+
+.apresentacao-caixa p {
+	line-height: 1.5em; 
+	padding: 2em 0 2em 0;
+	text-align: justify;
+}
+
+.links button a{
+	color: 	#000000;
+	text-decoration: none;
+	vertical-align: auto;	
+	padding: 0 5px;
+	display: flex;			/* Fazer com que o texto se alinhe no centro*/   
+    align-items: center;
+    font-size: 16px;
+}
+
+.links button{
+	background: #F8F8FF;
+	display: inline;
+	padding: 5px 20px;
+	margin: 2em 3em ;
+	font-weight: bold;  	 /*Usado para deixar em negrito*/
+	border:0;
+	border-radius: 20px;
+	transition: 1s;
+
+}
+
+.links button:hover{
+	background: #999999;	
+	text-decoration: none;
+	transition: 1s;
+
+
+}
+
+.linkedin, .github {
+	width: 35px;   			/*Muda o tamanho da letra*/
+}
+
+.desenvolvedor2 {
+	width: 500px;
+	float: right;
+	margin: 0 20px 20px 0;
+
+}
+
+
+
+
+/*+++++++++++++++++++++++++++SOBRE+++++++++++++++++++++++++++*/
+
+.sobre-principal { 							/* Class para definir o plano de fundo principal*/
+	background: linear-gradient(#F5F5F5, #DCDCDC);
+	border-top: 2px solid #000000;		 /*Usado para colocar uma borda no top*/
+
+}
+
+.sobre-caixa{
+	width: 1000px;						/*Usado para dimensionar o tamanho do texto*/
+	margin: 0 auto;
+	/*background: red; 	*/				/*CENTRALIZAR MARGEM*/
+	padding: 3em 0 9em;
+}
+
+.desenvovedor-imagem {
+	width: 30%;
+	float: left;
+	margin: 0 2em 0 0;
+	box-shadow: 10px 10px 15px #000000
+}
+
+.titulo-sobre{
+	font-size: 27px;
+	padding: 5px 0;
+	text-transform: uppercase;
+}
+
+.sobre-titulo{
+	font-size: 18px;
+	padding: 0.5em 0 1.4em;
+}
+
+.sobre-texto{
+	font-size: 17px;		/*Tamanho da fonte*/
+	line-height: 1.5em;     /*Espaçamento entre as linhas do texto*/
+	padding: 0 0 4em;		/*Espaçamento da borda inferior*/
+	text-align: justify;    /*Usado para justificar o texto*/
+}
+
+.curriculo {
+    font-size: 19px;
+    color: #000000;
+	padding: 5px 15px;
+	background: #DCDCDC;		/*Cor de fundo do icone baixar*/
+	font-weight: bold; 
+	border: 0;
+	border-radius: 20px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.curriculo:hover {
+	background: #999999;	
+	text-decoration: none;
+	transition: 0.5s;
+
+}
+
+
+
+/*+++++++++++++++++++++++++++PROJETOS+++++++++++++++++++++++++++*/
+
+.titulo-projeto {
+	margin: 26px 0 0px;
+	font-size: 50px;
+	text-align: center;
+
+}
+
+.projeto-principal {				/* Class para definir o plano de fundo principal*/
+	background: linear-gradient(#DCDCDC, #BEBEBE);
+	border-top: 2px solid #000000;
+}
+
+.projeto-caixa{					/*Classe para timitar a largura da pagina em 1000px*/
+	position: relative;
+ 	width: 1000px;
+ 	margin: auto;
+ 	padding: 4em 0 7em;
+ 	/*background: yellow;*/  			 /*CENTRALIZAR MARGEM*/
+
+ 	
+}
+
+.projeto-itens{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10%;
+	justify-items: center;
+}
+
+.projeto-1, .projeto-2, .projeto-3, .projeto-4{
+	width: 90%;
+	background: #BEBEBE;
+	border:1px solid #000000;
+	border-radius: 20px;
+	display: block;
+	transition: 1s;
+	padding: 0 0 2em;
+	box-shadow: 15px 10px 20px #000000;
+
+}
+
+
+.pong-imagem {
+	width: 100%;
+	border-radius: 20px;
+}
+
+.freeway-imagem {
+	width: 100%;
+
+	border-radius: 20px;
+}
+
+.sub-titulo {
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 20px;
+	padding: 10px 0 10px 5px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.descricao{
+	line-height: 1em;
+	font-size: 16px;
+	margin: 0 0 2em;
+
+}
+
+.Visualizar {
+	font-size: 19px;
+    color: #000000;
+	padding: 5px 15px;
+	margin-left: 5px;
+	background: #B5B5B5;	/*Cor de fundo do icone baixar*/
+	font-weight: bold; 
+	border-radius: 20px;
+	text-decoration: none;
+	transition: 1s;
+}
+
+.Visualizar:hover {
+	font-size: 19px;
+    color: #000000;
+	padding: 5px 15px;
+	background: #888888;		/*Cor de fundo do icone baixar*/
+	font-weight: bold; 
+	border-radius: 20px;
+	text-decoration: none;
+	transition: 1s;
+}
+
+/* PROJETO ORIGNAL
+.projeto-itens{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 29.5px;
+    row-gap: 159px;
+	justify-content: space-around;
+
+}
+
+.projeto-1, .projeto-2, .projeto-3, .projeto-4, .projeto-5, .projeto-6{
+	width: 300px;
+	height: 200px;
+	background: #BEBEBE;
+	border:1px solid #000000;
+	border-radius: 20px;
+	display: inline-block;
+	box-shadow: 10px 10px 15px #000000
+
+
+}
+
+.item p{
+		text-transform: uppercase;
+	color: #000000;
+	font-size: 20px;
+	text-decoration: none;
+	
+}
+
+
+.item{
+		width: 100%;
+		font-size: 21px;	
+		text-transform: uppercase;
+		background: #999999;
+		margin: 3.8em 0;
+		padding: 5px 0;
+		text-align: center;	
+
+}
+
+.projeto-1:hover {
+	
+	font-weight: bold;	
+	background: url("imagens/pong.jpeg");
+	background-size: 300px 200px;
+
+}
+
+.projeto-2:hover {
+	font-weight: bold;	
+	background: url("imagens/freeway.jpeg");
+	background-size: 300px 200px;
+
+}
+
+*/
+/*++++++++++++++++++++++++++++++++++++HABILIDADES+++++++++++++++++++++++++++*/
+
+/*
+	.habilidade-principal {				
+		background: linear-gradient(#BEBEBE, #A9A9A9);
+		border-top: 2px solid #000000;
+	}
+
+	.habilidade-caixa{					
+		position: relative;
+	 	width: 1000px;
+	 	margin: auto;
+	 	padding: 4em 0 7em;
+	 	background: yellow;  			 
+
+	}
+
+	.titulo-projeto {
+		margin: 0 0 30px;
+	}
+
+	.skils img{
+		width: 10%;
+		background: red;
+		margin: 0 0 30px;
+	}
+*/ 
+
+/*++++++++++++++++++++++++++++++++++++FOOTER+++++++++++++++++++++++++++*/
+
+footer {
+	text-align: center;
+	background: linear-gradient(#a9a9a9, #777777);
+}
+
+.logo-inferior {
+	width: 70px;
+}
+
+/*+++++++++++++++++++++++++++RESPONSIVO+++++++++++++++++++++++++++*/
+
+@media screen and (max-width: 480px){
+
+
+}
