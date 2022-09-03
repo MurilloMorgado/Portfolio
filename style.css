@@ -322,8 +322,6 @@ nav a:hover {
 		margin-bottom: 5.5em;
 	}
 
-	
-
 	.secundario {
 		padding: 5em 0 0;
 	}
@@ -361,6 +359,61 @@ nav a:hover {
 
 	.rodape, .rodape__logo {
 		margin-top: 28em;
+	}
+
+}
+
+@media screen and (max-width: 350px){
+
+	.container, .projeto, .rodape {
+		width: 100%;
+	}
+
+	.logo-superior {
+		margin-left: 10px;
+	}
+
+	nav {
+		position: absolute;  
+		top: 20px;          
+		right: 10px; 
+	}
+
+	nav li{
+		margin-left: 10px;
+	}
+	
+	nav a {
+		font-size: 16px;
+		margin-right: 10px;
+
+	}
+
+	.container__caixa {
+		margin-top: 6em;
+		margin-left: 10px;
+	}
+
+	.container__nome {
+		font-size: 18px;
+	}
+
+	.container__titulo {
+		font-size: 27px;
+		width: 85%;
+	}
+
+	.container__texto {
+		width: 95%;
+		font-size: 15px;
+	}
+
+	.desenvolvedor_imagem {
+		width: 150px;
+	}
+
+	.projeto__titulo {
+		margin-top: 2em;
 	}
 
 }
